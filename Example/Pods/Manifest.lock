@@ -1,0 +1,16 @@
+PODS:
+  - JCPerformanceMonitor (0.1.0)
+
+DEPENDENCIES:
+  - JCPerformanceMonitor (from `../`)
+
+EXTERNAL SOURCES:
+  JCPerformanceMonitor:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JCPerformanceMonitor: a389bb31d207a02892e23cac752e6c08f4bc46a6
+
+PODFILE CHECKSUM: 2f6f77f7fc65ff9c9590faaf4390c6cc7c5148d7
+
+COCOAPODS: 1.11.2

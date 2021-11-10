@@ -7,7 +7,7 @@ target 'JCPerformanceMonitor_Example' do
 
   target 'JCPerformanceMonitor_Tests' do
     inherit! :search_paths
-
-    
+  
   end
+
 end

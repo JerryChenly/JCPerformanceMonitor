@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'JCPerformanceMonitor'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of JCPerformanceMonitor.'
+  s.summary          = 'iOS app性能(cpu、内存、fps)监控'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,14 +18,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  iOS app性能(cpu、内存、fps)监控。根据CADisplayLink做周期计算并对外回调。
                        DESC
 
-  s.homepage         = 'https://github.com/chenliangyin/JCPerformanceMonitor'
+  s.homepage         = 'https://github.com/JerryChenly/JCPerformanceMonitor'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'chenliangyin' => 'chenliangyin@innotechx.com' }
-  s.source           = { :git => 'https://github.com/chenliangyin/JCPerformanceMonitor.git', :tag => s.version.to_s }
+  s.author           = { 'JerryChenly' => 'jerrychenly@gmail.com' }
+  s.source           = { :git => 'https://github.com/JerryChenly/JCPerformanceMonitor.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'

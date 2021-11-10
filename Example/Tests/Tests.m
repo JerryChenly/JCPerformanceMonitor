@@ -2,8 +2,8 @@
 //  JCPerformanceMonitorTests.m
 //  JCPerformanceMonitorTests
 //
-//  Created by chenliangyin on 11/10/2021.
-//  Copyright (c) 2021 chenliangyin. All rights reserved.
+//  Created by JerryChenly on 11/10/2021.
+//  Copyright (c) 2021 JerryChenly. All rights reserved.
 //
 
 @import XCTest;

@@ -1,0 +1,6 @@
+framework module JCPerformanceMonitor {
+  umbrella header "JCPerformanceMonitor-umbrella.h"
+
+  export *
+  module * { export * }
+}

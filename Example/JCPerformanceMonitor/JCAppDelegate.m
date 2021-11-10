@@ -2,17 +2,24 @@
 //  JCAppDelegate.m
 //  JCPerformanceMonitor
 //
-//  Created by chenliangyin on 11/10/2021.
-//  Copyright (c) 2021 chenliangyin. All rights reserved.
+//  Created by JerryChenly on 11/10/2021.
+//  Copyright (c) 2021 JerryChenly. All rights reserved.
 //
 
 #import "JCAppDelegate.h"
+#import "JCPerformanceMonitor.h"
 
 @implementation JCAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    JCPerformanceMonitor *monitor = [JCPerformanceMonitor shared];
+    monitor.callback = ^(float cpuUsage, uint64_t memoryUsage, int fps){
+        NSLog(@"cpu : %.1f%%, memory: %.1fMB, fps: %d", cpuUsage*100, memoryUsage/(1024.0*1024.0), fps);
+    };
+    [monitor start];
+
+    
     return YES;
 }
 
@@ -40,6 +47,7 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
+    [[JCPerformanceMonitor shared] stop];
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 

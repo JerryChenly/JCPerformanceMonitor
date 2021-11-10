@@ -1,0 +1,6 @@
+framework module Pods_JCPerformanceMonitor_Example {
+  umbrella header "Pods-JCPerformanceMonitor_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
