@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'JCPerformanceMonitor_Example' do
+  pod 'JCPerformanceMonitor', :path => '../'
+
+  target 'JCPerformanceMonitor_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
