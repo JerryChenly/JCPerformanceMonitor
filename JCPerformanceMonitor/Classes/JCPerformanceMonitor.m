@@ -34,6 +34,7 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationWillTerminateNotification object:nil];
 }
 
+
 + (JCPerformanceMonitor *)shared {
     static JCPerformanceMonitor *instance;
     static dispatch_once_t onceToken;
@@ -42,6 +43,7 @@
     });
     return instance;
 }
+
 
 - (void)start {
     [self stop];
